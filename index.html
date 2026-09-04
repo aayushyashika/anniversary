@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Yashika ❤️</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #fff0f6, #ffe4ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    color: #5a3042;
+}
+
+.container {
+    width: 92%;
+    max-width: 650px;
+    min-height: 560px;
+    padding: 35px 25px;
+    background: rgba(255,255,255,0.82);
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    box-shadow: 0 15px 50px rgba(150,60,100,0.18);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.page {
+    display: none;
+    animation: fadeIn 0.7s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 38px;
+    color: #d94f83;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #d94f83;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+button {
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: #e95d91;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 7px 18px rgba(220,70,120,0.25);
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #d9477d;
+}
+
+button:active {
+    transform: scale(0.94);
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.message {
+    text-align: left;
+    background: rgba(255,240,247,0.85);
+    padding: 22px;
+    border-radius: 22px;
+    margin-top: 15px;
+}
+
+.message p {
+    margin: 0 0 14px;
+}
+
+.small {
+    font-size: 15px;
+    color: #8c6171;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    resize: vertical;
+    border: 2px solid #f0b5ca;
+    border-radius: 18px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255,255,255,0.9);
+}
+
+textarea:focus {
+    border-color: #e95d91;
+}
+
+.success {
+    font-size: 20px;
+    color: #d94f83;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 20px;
+    animation: floatHeart linear forwards;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes floatHeart {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 94%;
+        padding: 25px 17px;
+        min-height: 520px;
+    }
+
+    h1 {
+        font-size: 31px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- PAGE 1 -->
+    <div class="page active" id="page1">
+
+        <h1>yashikaaaaa ❤️</h1>
+
+        <p style="font-size:25px;">
+            Do u love me? 👀❤️
+        </p>
+
+        <button onclick="clickSound(); nextPage(2)">
+            Yes ❤️
+        </button>
+
+    </div>
+
+
+    <!-- PAGE 2 -->
+    <div class="page" id="page2">
+
+        <h2>how much u love me? 👀❤️</h2>
+
+        <div class="option-container">
+
+            <button onclick="clickSound(); nextPage(3)">
+                INFINITE ♾️
+            </button>
+
+            <button onclick="clickSound(); nextPage(3)">
+                INFINITE ♾️
+            </button>
+
+            <button onclick="clickSound(); nextPage(3)">
+                INFINITE ♾️
+            </button>
+
+        </div>
+
+        <p class="small">
+            u only have one option heieieieiei 😭❤️
+        </p>
+
+    </div>
+
+
+    <!-- PAGE 3 -->
+    <div class="page" id="page3">
+
+        <h1>HEIEIEIEIEIEIEIE 😭❤️</h1>
+
+        <h2>I KNOW!!! 😂❤️</h2>
+
+        <p>
+            I knew you were going to choose infinite anyway
+            heieieieiei 😭❤️
+        </p>
+
+        <button onclick="clickSound(); nextPage(4)">
+            One last thing... ❤️
+        </button>
+
+    </div>
+
+
+    <!-- PAGE 4 -->
+    <div class="page" id="page4">
+
+        <h2>Yashika ❤️</h2>
+
+        <div class="message">
+
+            <p>
+                Happy 9 months to us. 🥹❤️
+            </p>
+
+            <p>
+                I honestly don't know how these 9 months went by so quickly,
+                but I'm really grateful that I got to spend them with you.
+            </p>
+
+            <p>
+                You've become such an important part of my life, and all the
+                little things about you mean so much to me. Your smile, the way
+                you talk, the random things you do, and even the small moments
+                we share are memories I'll always keep close.
+            </p>
+
+            <p>
+                We've had good days, bad days, silly arguments, laughs, and so
+                many moments that I'll never forget. And through all of it,
+                I'm just really happy that it's you.
+            </p>
+
+            <p>
+                Thank you for being there, for making me smile, and for being
+                a part of these 9 months with me.
+            </p>
+
+            <p>
+                I hope we get to make many, many more memories together.
+            </p>
+
+            <p>
+                Happy 9 months, Yashika. ❤️
+            </p>
+
+            <p>
+                I'm really lucky to have you. 🫶
+            </p>
+
+        </div>
+
+        <button onclick="clickSound(); nextPage(5)">
+            One last thing ❤️
+        </button>
+
+    </div>
+
+
+    <!-- PAGE 5 -->
+    <div class="page" id="page5">
+
+        <h2>
+            One last thing, Yashika... 🥹❤️
+        </h2>
+
+        <p>
+            Can you tell me where I can improve?
+        </p>
+
+        <p>
+            You can be completely honest with me.
+            I promise I'll listen. ❤️
+        </p>
+
+        <textarea
+            id="answer"
+            placeholder="Tell me honestly... ❤️"
+        ></textarea>
+
+        <br>
+
+        <button onclick="clickSound(); sendAnswer()">
+            I'll remember this ❤️
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =====================================
+   BUTTON CLICK SOUND
+   No audio file is required.
+===================================== */
+
+let audioContext = null;
+
+function clickSound() {
+
+    if (!audioContext) {
+
+        audioContext =
+            new (window.AudioContext ||
+                 window.webkitAudioContext)();
+    }
+
+    if (audioContext.state === "suspended") {
+        audioContext.resume();
+    }
+
+    const oscillator =
+        audioContext.createOscillator();
+
+    const gain =
+        audioContext.createGain();
+
+    oscillator.type = "sine";
+
+    oscillator.frequency.setValueAtTime(
+        700,
+        audioContext.currentTime
+    );
+
+    oscillator.frequency.exponentialRampToValueAtTime(
+        1000,
+        audioContext.currentTime + 0.04
+    );
+
+    gain.gain.setValueAtTime(
+        0.0001,
+        audioContext.currentTime
+    );
+
+    gain.gain.exponentialRampToValueAtTime(
+        0.10,
+        audioContext.currentTime + 0.01
+    );
+
+    gain.gain.exponentialRampToValueAtTime(
+        0.0001,
+        audioContext.currentTime + 0.07
+    );
+
+    oscillator.connect(gain);
+    gain.connect(audioContext.destination);
+
+    oscillator.start();
+
+    oscillator.stop(
+        audioContext.currentTime + 0.08
+    );
+}
+
+
+/* =====================================
+   CHANGE PAGE
+===================================== */
+
+function nextPage(pageNumber) {
+
+    document.querySelectorAll(".page").forEach(function(page) {
+        page.classList.remove("active");
+    });
+
+    document
+        .getElementById("page" + pageNumber)
+        .classList.add("active");
+
+    createHearts(5);
+}
+
+
+/* =====================================
+   FLOATING HEARTS
+===================================== */
+
+function createHeart() {
+
+    const heart =
+        document.createElement("div");
+
+    heart.className = "heart";
+
+    const hearts = [
+        "❤️",
+        "💕",
+        "💗",
+        "💖",
+        "💓"
+    ];
+
+    heart.innerHTML =
+        hearts[Math.floor(
+            Math.random() * hearts.length
+        )];
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (15 + Math.random() * 18) + "px";
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function() {
+        heart.remove();
+    }, 10000);
+}
+
+
+function createHearts(amount) {
+
+    for (let i = 0; i < amount; i++) {
+
+        setTimeout(
+            createHeart,
+            i * 250
+        );
+    }
+}
+
+
+/* Create occasional hearts */
+
+setInterval(createHeart, 1800);
+
+
+/* =====================================
+   SEND FEEDBACK TO FORMSPREE
+===================================== */
+
+async function sendAnswer() {
+
+    const answer =
+        document
+        .getElementById("answer")
+        .value
+        .trim();
+
+    const result =
+        document.getElementById("result");
+
+
+    if (!answer) {
+
+        result.innerHTML =
+            '<p class="success">' +
+            'Write something first 😭❤️' +
+            '</p>';
+
+        return;
+    }
+
+
+    result.innerHTML =
+        '<p class="success">' +
+        'Sending... ❤️' +
+        '</p>';
+
+
+    try {
+
+        const response =
+            await fetch(
+                "https://formspree.io/f/mqpklyek",
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body: JSON.stringify({
+                        message: answer
+                    })
+                }
+            );
+
+
+        if (response.ok) {
+
+            result.innerHTML = `
+                <p class="success">
+                    Thank you for being honest with me 🥹❤️
+                    <br><br>
+                    I really appreciate you telling me.
+                    <br>
+                    I'll listen and try my best. 🫶
+                </p>
+            `;
+
+
+            document
+                .getElementById("answer")
+                .disabled = true;
+
+
+            const buttons =
+                document.querySelectorAll(
+                    "#page5 button"
+                );
+
+            buttons[0].innerText =
+                "Sent ❤️";
+
+            buttons[0].disabled = true;
+
+        } else {
+
+            throw new Error("Failed");
+
+        }
+
+    } catch (error) {
+
+        result.innerHTML = `
+            <p class="success">
+                Something went wrong 😭
+                <br>
+                Please try again.
+            </p>
+        `;
+    }
+}
+
+</script>
+
+</body>
+</html>
